@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Other styles remain unchanged */
+
+.header img {
+    margin: 0 20px; 
+    width: 150px; /* Increase the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.header-title {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.game-info {
+    margin: 20px 0;
+}
+
+.grid-3x3, .grid-4x4, .grid-5x5 {
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-3x3 {
+    grid-template-columns: repeat(3, 100px);
+}
+
+.grid-4x4 {
+    grid-template-columns: repeat(4, 100px);
+}
+
+.grid-5x5 {
+    grid-template-columns: repeat(5, 100px);
+}
+
+.grid-3x3 div, .grid-4x4 div, .grid-5x5 div {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: black; /* To ensure the X and O symbols are visible */
+}
+
+#reset-button, #solo-mode {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#reset-button:hover, #solo-mode:hover {
+    background-color: darkorange;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+#board-size {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-size: 1em;
+}
+
+#board-size:hover {
+    background-color: darkorange;
+}
