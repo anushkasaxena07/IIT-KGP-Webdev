@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Battle Arena</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/title.png" alt="Side Image 1"> <!-- Ensure you have the side-image1.png file -->
+
+            <img src="/logo.png.png" alt="Game Logo"> <!-- Ensure you have the logo.png file -->
+            <div class="header-title">XO Battle Arena</div>
+            <img src="/title.png" alt="Side Image 2"> <!-- Ensure you have the side-image2.png file -->
+        </div>
+        <h2>Classic Tic Tac Toe Game</h2>
+        <div class="game-info">
+            <div id="player-turn">Player 1's Turn</div>
+            <button id="reset-button">Reset Game</button>
+            <button id="solo-mode">Play Solo</button>
+            <select id="board-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+        </div>
+        <div id="game-board" class="grid-3x3"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p>Are you sure you want to reset the game?</p>
+                <button id="confirm-reset">Yes</button>
+                <button id="cancel-reset">No</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
